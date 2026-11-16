@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "brand": {
+    "name": "MrBizNTech",
+    "owner": "Dennis Campbell",
+    "visual_status": "provisional_until_brand_assets_and_first_draft_review",
+    "direction": "Confident, conversational technology leadership with human stories and community impact.",
+    "palette": "High contrast neutral base with one accent selected from supplied brand assets; do not inherit AIS branding.",
+    "typography": "Readable sans serif, sentence case, restrained emphasis; confirm fonts against supplied brand assets."
+  },
+  "references": [
+    { "url": "https://www.instagram.com/reel/DXJzl3jySxZ/", "status": "unreviewed_access_unavailable", "use": "User-supplied inspiration; no visual or pacing claims verified." },
+    { "url": "https://www.instagram.com/reel/DfqJOLWI5p0/", "status": "unreviewed_access_unavailable", "use": "User-supplied inspiration; no visual or pacing claims verified." },
+    { "url": "https://www.instagram.com/reel/DfTSZcnovSg/", "status": "unreviewed_access_unavailable", "use": "User-supplied inspiration; no visual or pacing claims verified." },
+    { "url": "https://garyvaynerchuk.com/content-marketing-strategy/", "status": "article_reviewed", "use": "Repurpose a long-form pillar into standalone, platform-specific pieces. Editorial inspiration, not measured visual imitation or a performance guarantee." },
+    { "url": "https://www.youtube.com/shorts/geBKHwL7NS0", "creator": "Alex Hormozi", "duration_seconds": 75, "status": "metadata_auto_captions_and_sampled_storyboards_reviewed", "use": "Specific audience problem, clarifying exchange, a practical reframe and conversational payoff; optional opening headline and two-speaker layout. Full playback, audio mix and exact cuts not verified." },
+    { "url": "https://www.youtube.com/shorts/GWIoHrYUeY4", "creator": "Alex Hormozi", "duration_seconds": 69, "status": "metadata_auto_captions_and_sampled_storyboards_reviewed", "use": "Problem context before advice; speaker-led framing and concise captions. Do not discard the setup just to reach a headline faster. Full playback, audio mix and exact cuts not verified." },
+    { "url": "https://www.youtube.com/shorts/cPYFy89780k", "creator": "Alex Hormozi", "duration_seconds": 38, "status": "metadata_auto_captions_and_sampled_storyboards_reviewed", "use": "Optional source-supported headline, short problem-to-reframe arc and speaker-focused views. Full playback, audio mix and exact cuts not verified." }
+  ],
+  "shared": {
+    "captions": {
+      "words_per_chunk_target": [2, 5],
+      "case": "sentence",
+      "contrast": "Use a consistent dark backing where needed; verify against actual frames.",
+      "placement": "Protect faces, mouths, important action and platform controls. Check every layout change on a phone-sized preview.",
+      "speaker_treatment": "A subtle, consistent caption color distinction may identify verified speakers. Do not infer speaker identity from color alone."
+    },
+    "speech": "Keep natural delivery, emotional pauses and complete thoughts. Remove only reviewed retakes and dead air between phrases; never accelerate speech by default.",
+    "visuals": "Prefer supplied footage, real demonstrations and screen recordings. Use restrained text or diagrams when useful. No required face-camera quota or arbitrary cut interval.",
+    "attribution": "Identify speakers from user confirmation or verified source evidence. Never present another person's words as Dennis's, or imply that unrelated footage shows the narrator speaking.",
+    "off_camera_policy": "Dennis being off camera does not imply the audible voice is Dennis. Keep the visible subject and actual speaker, and identify any off-camera interviewer or narrator only after verification. No automatic synthetic narration.",
+    "conversation_recipe": "Where the source supports it: a specific problem, a useful clarifying exchange, a reframe and a complete takeaway. Keep the needed question. Optional split-screen requires real corresponding views, otherwise use a speaker view or relevant supplied footage.",
+    "opening_headline": "An optional concise headline may state the supported tension early. Keep it distinct from verbatim captions; use the chosen MrBizNTech accent rather than inheriting reference branding or forcing an intro card.",
+    "story": "Lead with a truthful tension, question, result or insight already supported by the source. Deliver the context and payoff. Do not invent results, quotes, narration or spoken CTAs.",
+    "audio": "Voice first. Optional licensed music and subtle sound effects only when useful; review the encoded mix and every speech join.",
+    "source_mapping": "Each selected segment must record source_id, original start/end seconds and speaker_id. Keep a separate mapping for subsequent silence/mistake edits; never mix timeline clocks.",
+    "review": "Check meaning, speaker attribution, caption accuracy, audio, crop and pacing on an actual draft before approval. No automatic publishing."
+  },
+  "platforms": {
+    "youtube_long": { "intent": "Full podcast or extended story", "frame": "Preserve the source composition; 16:9 delivery only when appropriate.", "copy": "Source-grounded title, description and verified chapter timestamps." },
+    "youtube_shorts": { "intent": "Standalone vertical insight", "frame": "9:16 target; reframe manually when needed to protect action and speakers.", "copy": "Accurate title and concise context." },
+    "instagram_reels": { "intent": "Standalone vertical story", "frame": "9:16 target; inspect cover and interface-safe text placement.", "copy": "Conversational caption and relevant CTA." },
+    "tiktok": { "intent": "Standalone vertical story", "frame": "9:16 target; inspect interface-safe text placement.", "copy": "Direct opening and source-supported context." },
+    "threads": { "intent": "Video plus a conversation starter", "frame": "Review the chosen video crop in context.", "copy": "Under 500 characters total, including spaces, hashtags and emoji.", "caption_max_characters": 499 },
+    "facebook": { "intent": "Vertical highlight or full episode as appropriate", "frame": "Choose a crop for the selected placement.", "copy": "Accessible context and a specific discussion prompt." }
+  },
+  "presets": {
+    "off-camera": {
+      "name": "Off-camera story",
+      "face_camera_required": false,
+      "duration_target_seconds": [20, 75],
+      "duration_note": "Editorial starting range, not a platform limit. Keep longer when context needs it.",
+      "layout": "Let authentic scene footage and its actual speakers carry the frame. If verified narration is available, it may stay entirely off camera. Never force a speaker panel or invent a talking head.",
+      "pacing": "Move through context, tension and payoff with motivated cuts. Let meaningful real-world action breathe.",
+      "outputs": ["youtube_shorts", "instagram_reels", "tiktok", "threads", "facebook"]
+    },
+    "podcast": {
+      "name": "Podcast highlights",
+      "face_camera_required": false,
+      "duration_target_seconds": [30, 90],
+      "duration_note": "Candidate range only. Clip count follows strong, complete ideas rather than a quota.",
+      "layout": "Use the active speaker only when visible and verified; otherwise retain the wide view, use relevant supplied B-roll or an explicitly labeled audio-led layout. Protect both speakers when reframing.",
+      "pacing": "Select a complete insight; retain the question or a truthful context label when the answer depends on it. Preserve qualifications and who said what.",
+      "outputs": ["youtube_shorts", "instagram_reels", "tiktok", "threads", "facebook"]
+    },
+    "podcast-full": {
+      "name": "Full podcast episode",
+      "face_camera_required": false,
+      "duration_target_seconds": null,
+      "duration_note": "Source-led episode length; preserve the complete discussion and chapter only from verified content.",
+      "layout": "Preserve the original wide framing where available. For audio-only sources use a clearly labeled audio episode layout with supplied artwork; do not fabricate speaker video.",
+      "pacing": "Light cleanup, natural conversational rhythm and verified chapter breaks. Keep the original source available for highlight selection.",
+      "outputs": ["youtube_long", "facebook"]
+    },
+    "direct": {
+      "name": "Direct insight",
+      "face_camera_required": true,
+      "duration_target_seconds": [20, 60],
+      "duration_note": "Editorial starting range, not a platform limit.",
+      "layout": "Use Dennis's verified on-camera footage, occasional motivated punch-ins and relevant supplied B-roll. Keep captions clear of his mouth.",
+      "pacing": "One specific insight, supporting example and complete takeaway in Dennis's natural delivery.",
+      "outputs": ["youtube_shorts", "instagram_reels", "tiktok", "threads", "facebook"]
+    }
+  }
+}

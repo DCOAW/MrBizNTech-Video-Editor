@@ -14,6 +14,16 @@ document loading defaults. Work locally unless the user requests subagents.
 
 ## Start and route
 
+For Dennis's new edits, read `docs/MRBIZNTECH-WORKFLOW.md` and the project's
+`EDIT-BRIEF.json` and `DESIGN.md`. Create an intake workspace with
+`npm run new-edit -- <slug> --preset off-camera` (or `podcast`, `podcast-full`,
+`direct`). This stages local media and writes a brief, not a composition.
+The project profile overrides Nate's measured layout/pacing defaults: off-camera
+and podcast footage have no required speaker panel, face-camera quota or fixed
+cut cadence. Preserve source context, speaker identity and original-to-edit
+timestamp mappings. Reference reels marked unreviewed must not be described as
+analyzed. Visual branding remains provisional until supplied assets are reviewed.
+
 Read `README.md` for installation and `docs/WORKFLOW.md` for a complete edit.
 Use `edit-video` to coordinate transcription, cuts, design, and verification.
 For one stage, load the matching local skill:

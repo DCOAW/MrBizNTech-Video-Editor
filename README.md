@@ -1,4 +1,19 @@
-# Herk Edit Kit
+# MrBizNTech Video Editor
+
+Dennis Campbell's personal editing workspace, forked from Herk Edit Kit. Start
+with the [MrBizNTech workflow](docs/MRBIZNTECH-WORKFLOW.md) for off-camera footage,
+podcast highlights, full episodes and direct insights:
+
+```sh
+npm run new-edit -- my-first-story --preset off-camera
+npm run new-edit -- podcast-highlights --preset podcast --source "raw-media/episode.mp4"
+```
+
+These commands create local intake briefs and media folders. Editing, rendering,
+an upload dashboard and publishing are separate steps. The upstream kit and its
+examples are preserved below.
+
+## Herk Edit Kit
 
 Nate Herk's video-editing kit for **Codex and Claude Code**, built on HyperFrames.
 Formerly the HyperFrames Student Kit.
